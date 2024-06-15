@@ -16,7 +16,7 @@ public class SecurityConfig {
 	
 	@Bean
 	public SecurityFilterChain filterchain(HttpSecurity http) throws Exception {
-		http
+	http
         .authorizeHttpRequests(requests -> requests
             .requestMatchers("/", "/home", "/JobProfileHome", "/SearchValue").permitAll()
             .requestMatchers("/login", "/login/User", "/login/Admin").permitAll()
